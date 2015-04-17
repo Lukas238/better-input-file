@@ -42,6 +42,8 @@ $('input:file').betterInputFile({
 <input type="file" data-btnText="Select a file" data-placeholder="No file selected" />
 ```
 
+>Note: Inline configurations overrides the script configurations.
+
 
 ##Options
 

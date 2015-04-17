@@ -1,0 +1,35 @@
+{
+  "name": "Better-input-file-button",
+  "version": "1.1.0",
+  "description": "Replace the system inputfile with an -traslatable- HTML5 button",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-header": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-jshint": "^1.10.0",
+    "gulp-uglify": "^1.2.0"
+  },
+  "devDependencies": {
+    "jshint-stylish": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Dasso",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lukas238/better-input-file.git"
+  },
+  "keywords": [
+    "bootstrap3",
+    "html5",
+    "jquery",
+    "inputfile"
+  ],
+  "bugs": {
+    "url": "https://github.com/Lukas238/better-input-file/issues"
+  },
+  "homepage": "https://github.com/Lukas238/better-input-file"
+}
