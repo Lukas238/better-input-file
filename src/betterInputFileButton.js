@@ -1,20 +1,27 @@
 ﻿jQuery.fn.betterInputFile = function(options) {
-    this.each(function() {      
-        var _inputFile = this;
+    this.each(function() {    
+		var _inputFile = this;
+        var mainClass = 'betterInputFile';
+        
+		if( $(_inputFile).parents('.'+mainClass).length > 0){
+            return true;
+        }
+	
+		
         var defaults = {
-            mainClass   : 'betterInputFile',
-            btnText     : 'Seleccionar archivo',
+            cssClass   : '',
+            btnText     : 'Select a file',
             btnClass    : 'btn btn-primary',
-            placeholder : 'Ningún archivo seleccionado',
+            placeholder : 'No file selected',
             multiple: false,
-            multipleFilesText: 'Archivos seleccionados',
+            multipleFilesText: 'Files selected',
             afterSelect:  function(filelist){
             }
         };
         options = $.extend(defaults, options);
         
         var inline_options = {
-            mainClass: $(_inputFile).data('mainclass'),
+            cssClass: $(_inputFile).data('cssclass'),
             btnText : $(_inputFile).data('btntext'),
             btnClass : $(_inputFile).data('btnclass'),
             placeholder : $(_inputFile).data('placeholder'),
@@ -30,13 +37,13 @@
         $(_inputFile)
             .removeClass()
             .hide()
-            .wrap('<div class="'+options.mainClass+'" />')
+            .wrap('<div class="'+mainClass+((options.cssClass)?' '+options.cssClass:'')+'" />')
             .wrap('<div class="input-group" />')
             .parent()
             .prepend('<input type="text" placeholder="'+options.placeholder+'" class="form-control'+((options.lblClass)?' '+options.lblClass:'')+'" readonly>')
             .prepend('<span class="input-group-btn"><button type="button"'+((options.btnClass)?' class="'+options.btnClass+'"':'')+ '>'+options.btnText+'</button></span>');
         
-        var _b3if = $(_inputFile).parents('.'+options.mainClass);
+        var _b3if = $(_inputFile).parents('.'+mainClass);
         var _button = $(_b3if).find('button');
         var _label = $(_b3if).find('input.form-control');
         
