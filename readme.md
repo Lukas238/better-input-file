@@ -96,7 +96,8 @@ $('input:file').betterInputFile({
 })
 ```
 
-
+##Examples
+<iframe width="100%" height="600" src="http://jsfiddle.net/Lukas238/YwNa4/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 
 ##Technologies
