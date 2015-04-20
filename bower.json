@@ -1,0 +1,26 @@
+{
+  "name": "better-input-file",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Lukas238/better-input-file",
+  "authors": [
+    "Lucas Dasso <dassolucas@c238.com.ar>"
+  ],
+  "description": "Replace the system inputfile with an -traslatable- HTML5 button",
+  "main": "dist/betterInputFileButton.js",
+  "keywords": [
+    "input",
+    "file",
+    "html5",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+	".jshintrc",
+    "node_modules",
+	"src/bower_components"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.1"
+  }
+}

@@ -3,7 +3,7 @@
  * Replace the system inputfile with an -traslatable- HTML5 button
  * @URL https://github.com/Lukas238/better-input-file.git
  * @author Lucas Dasso
- * @version 1.1.0
+ * @version 1.0.0
  * Copyright 2015. ISC licensed.
  */
 jQuery.fn.betterInputFile = function(options) {

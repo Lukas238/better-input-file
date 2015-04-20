@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 var config = {
     src: './src',
     dist: './dist',
+	bower_src: './src/bower_components'
 }
  
 var banner = [
@@ -36,4 +37,9 @@ gulp.task('js',function(){
     .pipe(gulp.dest(config.dist));
 });
  
-gulp.task('default', ['js']);
+gulp.task('bower',function(){
+  gulp.src(config.bower_src+'/jquery/dist/*.*')
+    .pipe(gulp.dest(config.dist));
+});
+ 
+gulp.task('default', ['js', 'bower']);
