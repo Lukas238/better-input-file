@@ -5,6 +5,12 @@ Better-input-file-button
 
 [Live examples](http://jsfiddle.net/Lukas238/YwNa4/embedded/result,js,html/) 
 
+##Installing with Bower
+```script
+$ bower install better-input-file
+```
+
+
 
 ##Including files
 ```html
