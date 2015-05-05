@@ -3,6 +3,10 @@ Better-input-file-button
 
 **Better-input-file-button** is a jQuery plugin that replaces the system default input type="file" button for an improved -and translatable- html5 button.
 
+![Preview](https://raw.githubusercontent.com/Lukas238/better-input-file/master/resources/preview.jpg)
+
+
+
 [Live examples](http://jsfiddle.net/Lukas238/YwNa4/embedded/result,js,html/) 
 
 ##Installing with Bower
