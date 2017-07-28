@@ -44,10 +44,12 @@ You can customize the button by passing the options as JSON object.
 
 #### In the plugin directly:
 ```js
-$('input:file').betterInputFile({
-    'btnText': 'Select a file',
-	'placeholder': 'No file selected'
-});
+$('input:file').betterInputFile(
+    {
+        'btnText': 'Select a file',
+        'placeholder': 'No file selected'
+    }
+);
 ```
 #### With **data** atributes in the HTML input tag:
 ```html
