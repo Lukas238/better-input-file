@@ -1,5 +1,5 @@
-Better-input-file-button
-=================
+# Better-input-file-button
+
 
 **Better-input-file-button** is a jQuery plugin that replaces the system default input type="file" button for an improved -and translatable- html5 button.
 
@@ -9,14 +9,14 @@ Better-input-file-button
 
 [Live examples](http://jsfiddle.net/Lukas238/YwNa4/embedded/result,js,html/) 
 
-##Installing with Bower
+## Installing with Bower
 ```script
 $ bower install better-input-file
 ```
 
 
 
-##Including files
+## Including files
 ```html
 <!-- Bootstrap3 CSS (optional) -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></script>
@@ -39,17 +39,17 @@ $(document).ready(function(){
 });
 ```	
 
-##Configuration
+## Configuration
 You can customize the button by passing the options as JSON object.
 
-####In the plugin directly:
+#### In the plugin directly:
 ```js
 $('input:file').betterInputFile({
     'btnText': 'Select a file',
 	'placeholder': 'No file selected'
 });
 ```
-####With **data** atributes in the HTML input tag:
+#### With **data** atributes in the HTML input tag:
 ```html
 <input type="file" data-btnText="Select a file" data-placeholder="No file selected" />
 ```
@@ -57,42 +57,42 @@ $('input:file').betterInputFile({
 >Note: Inline configurations overrides the script configurations.
 
 
-##Options
+## Options
 
-###mainClass
+### mainClass
 _string_ - Default: 'betterInputFile'
 
 String that contains classes that will be added to the root element of the beter input button plugin.
 
-###btnText
+### btnText
 _string_ - Default: 'Select a file'
 
 String that contains the button text.
 
-###btnClass
+### btnClass
 _string_ - Default: 'btn btn-primary'
 
 String that contains classes that will be added to the button tag. The current class add styles if Bootstrap3 CSS is present.
 
-###placeholder
+### placeholder
 _string_ - Default: "No file selected",
 
 String that contains the input placeholder text.	
 
-###multiple
+### multiple
 _boolean_ - Default: False
 
 Define if the input file can select multiple files.
 
-###multipleFilesText
+### multipleFilesText
 _string_ - Default: "Files selected"
 
 String that contains the text to display when multiple files are selected.
 
 
-##Callbacks
+## Callbacks
 
-###afterSelect
+### afterSelect
 _function_ - Parameters: filelist (object)
 
 This callback is trigger after a file or grupo of files are selected.
@@ -109,14 +109,14 @@ $('input:file').betterInputFile({
 ```
 
 
-##Technologies
+## Technologies
 - jQuery
 - HTML5
 - CSS
 -Bootstrap3
 
 
-##Browser suppor
+## Browser suppor
 - IE7+
 - Chrome
 - Firefox
