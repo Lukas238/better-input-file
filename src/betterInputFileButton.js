@@ -15,7 +15,7 @@
             placeholder : 'No file selected',
             multiple: false,
             multipleFilesText: 'Files selected',
-            afterSelect:  function(filelist){
+            afterSelect:  function(filelist, input){
             }
         };
         options = $.extend(defaults, options);
@@ -53,7 +53,7 @@
             $(_label).val( fileNum > 1 ? options.multipleFilesText : fileName );
             
             //Callback
-            options.afterSelect.call(this, $(_inputFile).get(0).files);
+            options.afterSelect.call(this, $(_inputFile).get(0).files, $(_inputFile));
         });
         
         $(_button).click(function (e) {
