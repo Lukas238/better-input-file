@@ -19,13 +19,13 @@ $ bower install better-input-file
 ## Including files
 ```html
 <!-- Bootstrap3 CSS (optional) -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 <!-- jQuery 1.7.2+ -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <!-- better-input-file-button core JS file -->
-<script src="betterInputFileButton.min.js"></script>
+script src="betterInputFileButton.js"></script>
 ```
 
 ##Initializing the plugin
