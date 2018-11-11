@@ -12,6 +12,7 @@
             cssClass   : '',
             btnText     : 'Select a file',
             btnClass    : 'btn btn-primary',
+            btnLeft: true,
             placeholder : 'No file selected',
             multiple: false,
             multipleFilesText: 'Files selected',
@@ -24,6 +25,7 @@
             cssClass: $(_inputFile).data('cssclass'),
             btnText : $(_inputFile).data('btntext'),
             btnClass : $(_inputFile).data('btnclass'),
+            btnLeft : $(_inputFile).data('btnLeft'),
             placeholder : $(_inputFile).data('placeholder'),
             multiple : $(_inputFile).data('multiple'),
             multipleFilesText : $(_inputFile).data('multiplefilestext')
@@ -34,14 +36,23 @@
             $(_inputFile).attr('multiple', 'multiple');
         }
         
+        var btn_html = '';
+        var btn_input = '<input type="text" placeholder="'+options.placeholder+'" class="form-control'+((options.lblClass)?' '+options.lblClass:'')+'" readonly>';
+        var btn_button = '<span class="input-group-btn"><button type="button"'+((options.btnClass)?' class="'+options.btnClass+'"':'')+ '>'+options.btnText+'</button></span>';
+        
+        if( options.btnLeft){
+            btn_html = btn_button + btn_input;
+        }else{
+            btn_html = btn_input + btn_button;
+        }
+
         $(_inputFile)
             .removeClass()
             .hide()
             .wrap('<div class="'+mainClass+((options.cssClass)?' '+options.cssClass:'')+'" />')
             .wrap('<div class="input-group" />')
             .parent()
-            .prepend('<input type="text" placeholder="'+options.placeholder+'" class="form-control'+((options.lblClass)?' '+options.lblClass:'')+'" readonly>')
-            .prepend('<span class="input-group-btn"><button type="button"'+((options.btnClass)?' class="'+options.btnClass+'"':'')+ '>'+options.btnText+'</button></span>');
+            .prepend(btn_html);
         
         var _b3if = $(_inputFile).parents('.'+mainClass);
         var _button = $(_b3if).find('button');
