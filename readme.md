@@ -19,13 +19,13 @@ $ bower install better-input-file
 ## Including files
 ```html
 <!-- Bootstrap3 CSS (optional) -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery 1.7.2+ -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <!-- better-input-file-button core JS file -->
-script src="betterInputFileButton.js"></script>
+<script src="betterInputFileButton.js"></script>
 ```
 
 ##Initializing the plugin
@@ -74,7 +74,11 @@ String that contains the button text.
 ### btnClass
 _string_ - Default: 'btn btn-primary'
 
-String that contains classes that will be added to the button tag. The current class add styles if Bootstrap3 CSS is present.
+### btnLeft
+_boolean_ - Default: true
+
+This property set the position of the botton to the left (default) or right of the input box.
+
 
 ### placeholder
 _string_ - Default: "No file selected",
