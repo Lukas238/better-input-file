@@ -1,6 +1,6 @@
 {
-  "name": "Better-input-file-button",
-  "version": "1.0.0",
+  "name": "better-input-file-button",
+  "version": "1.0.1",
   "description": "Replace the system inputfile with an -traslatable- HTML5 button",
   "main": "gulpfile.js",
   "dependencies": {
