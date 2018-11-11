@@ -77,7 +77,7 @@ _string_ - Default: 'btn btn-primary'
 ### btnLeft
 _boolean_ - Default: true
 
-This property set the position of the botton to the left (default) or right of the input box.
+This property set the position of the button to the left (default) or right of the input box.
 
 
 ### placeholder
